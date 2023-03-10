@@ -20,23 +20,28 @@ p {
   margin-bottom: 0;
 }
 ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 img {
   display: block;
 }
+body {
+  margin: 0;
+  padding: 0;
+  
+}
 .container {
-  width: 1200px;
+  width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+       
 }
 .section-margin {
-  padding-bottom: 60px;
-  padding-top: 120px;
+  padding-bottom: 120px;
+
 }
 .header-container {
   display: flex;
@@ -64,11 +69,14 @@ header {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.5;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
   letter-spacing: 0.02em;
-  text-align: center;
-  padding-top: 161px;
-  padding-bottom: 48px;
-}
+  align-items: center;
+ 
+ }
 .headlines-two {
   color: var(--dark-navy-blue);
   font-size: 36px;
@@ -89,6 +97,7 @@ header {
   letter-spacing: 0.02em;
   line-height: 1.5;
   line-height: 24px;
+  margin-top: 8px;
 }
 .small-text {
   color: var(--text-slate);
@@ -146,11 +155,11 @@ header {
   min-width: 169px;
   min-height: 56px;
   text-align: center;
-  padding: 16px, 32px, 16px, 32px;
-  margin-bottom: 188px;
+  
+  
 }
 .buttons:focus {
-  border-color: var(--pressed-state-ocean);
+  color: var(--pressed-state-ocean);
 }
 .buttons:hover {
   color: var(--white-text);
@@ -165,7 +174,7 @@ header {
   margin-bottom: 72px;
 }
 .filter-buttons {
-  border-color: var(--accent-cornflower);
+  border: 1px solid var(--accent-cornflower);
   background-color: var(--light-cloud);
   color: var(--primary-brand-iris);
   font-size: 16px;
@@ -173,35 +182,42 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   list-style: none;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 12px 24px 12px 24px;
   cursor: pointer;
   margin-right: 24px;
 }
 .filter-buttons:hover {
+  border: 1px solid var(--primary-brand-iris);
   background-color: var(--primary-brand-iris);
   color: var(--white-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .background-top {
   background-color: var(--dark-navy-blue);
   background-size: 100%;
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  margin-bottom: 120px;
 }
 .background-footer {
   background-color: var(--dark-navy-blue);
-  padding: 156px;
-}
+  
+ }
 .background-our-team {
   background-color: var(--light-cloud);
+  padding-top: 120px;
+  margin-bottom: 120px;
 }
 .white-text {
   color: var(--accent-cornflower);
   font-size: 16px;
   font-weight: 400;
+  max-width: 264px;
+  margin-top: 16px;
 }
 
 /*appearance of team cards*/
@@ -212,8 +228,7 @@ header {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-text);
   text-align: center;
-  padding: 0px, 16px, 0px, 16px;
-  margin-bottom: 48px;
+  gap: 24px;
 }
 
 .subtitle {
@@ -252,19 +267,22 @@ header {
   line-height: 8px;
   column-gap: 24px;
   row-gap: 48px;
-  margin-bottom: 120px;
-}
+  }
 .portfolio-cards-content {
   padding-left: 16px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 16px;
+  border-left: solid 1px var(--accent-cornflower);
+  border-right: solid 1px var(--accent-cornflower);
+  border-bottom: solid 1px var(--accent-cornflower);
 }
 /*strong sides*/
 .menu-main-page {
   list-style: none;
   display: flex;
-  justify-content: space-between;
   line-height: 8px;
+  gap: 24px;
 }
 
 /*logo in header and footer*/
@@ -274,6 +292,7 @@ header {
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 .footerlogo-two {
   color: var(--light-cloud);
@@ -281,6 +300,11 @@ header {
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.footer-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .headerlogo-one {
   color: var(--primary-brand-iris);
@@ -317,12 +341,7 @@ a {
   position: relative;
 }
 
-.borders {
-  border: solid var(--accent-cornflower);
-  align-items: stretch;
-}
-
 .bottom-border {
-  border-bottom-style: solid;
+  border-bottom: solid 1px;
   border-bottom-color: var(--accent-cornflower);
 }
