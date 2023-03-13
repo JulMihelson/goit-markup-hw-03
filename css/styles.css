@@ -29,7 +29,6 @@ img {
 body {
   margin: 0;
   padding: 0;
-  
 }
 .container {
   width: 1158px;
@@ -37,11 +36,13 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-       
 }
 .section-margin {
   padding-bottom: 120px;
-
+  padding-top: 120px;
+}
+.second-section-margin {
+  padding-top: 120px;
 }
 .header-container {
   display: flex;
@@ -75,8 +76,7 @@ header {
   margin-bottom: 48px;
   letter-spacing: 0.02em;
   align-items: center;
- 
- }
+}
 .headlines-two {
   color: var(--dark-navy-blue);
   font-size: 36px;
@@ -155,8 +155,6 @@ header {
   min-width: 169px;
   min-height: 56px;
   text-align: center;
-  
-  
 }
 .buttons:focus {
   color: var(--pressed-state-ocean);
@@ -170,8 +168,8 @@ header {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin-top: 96px;
-  margin-bottom: 72px;
+  gap: 24px;
+  padding-bottom: 72px;
 }
 .filter-buttons {
   border: 1px solid var(--accent-cornflower);
@@ -187,7 +185,6 @@ header {
   display: flex;
   padding: 12px 24px 12px 24px;
   cursor: pointer;
-  margin-right: 24px;
 }
 .filter-buttons:hover {
   border: 1px solid var(--primary-brand-iris);
@@ -201,16 +198,14 @@ header {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
-  margin-bottom: 120px;
 }
 .background-footer {
   background-color: var(--dark-navy-blue);
-  
- }
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .background-our-team {
   background-color: var(--light-cloud);
-  padding-top: 120px;
-  margin-bottom: 120px;
 }
 .white-text {
   color: var(--accent-cornflower);
@@ -228,7 +223,6 @@ header {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-text);
   text-align: center;
-  gap: 24px;
 }
 
 .subtitle {
@@ -244,10 +238,8 @@ header {
 .list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   margin-top: 72px;
-
-  line-height: 8px;
+  gap: 24px;
 }
 .list-members:not(:nth-child(4n)) {
   margin-right: 24px;
@@ -255,8 +247,6 @@ header {
 .activities {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: auto;
 }
 
 .portfolio-cards {
@@ -267,7 +257,7 @@ header {
   line-height: 8px;
   column-gap: 24px;
   row-gap: 48px;
-  }
+}
 .portfolio-cards-content {
   padding-left: 16px;
   padding-top: 32px;
@@ -276,6 +266,10 @@ header {
   border-left: solid 1px var(--accent-cornflower);
   border-right: solid 1px var(--accent-cornflower);
   border-bottom: solid 1px var(--accent-cornflower);
+}
+.portfolio-margin {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 /*strong sides*/
 .menu-main-page {
@@ -302,10 +296,7 @@ header {
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
-.footer-content {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
+
 .headerlogo-one {
   color: var(--primary-brand-iris);
   font-family: "Raleway", sans-serif;
